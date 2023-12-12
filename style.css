@@ -1,0 +1,81 @@
+body {
+    margin: 10px;
+    background-image: url("assets/Pics/tile.jpg");
+
+}
+h1 {
+    font-family: 'titleFont';
+    text-align: center;
+    font-size: 50px;
+}
+label {
+    margin-left: 30px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+form {
+    background-image: url("assets/Pics/formbg.jpg");
+    margin: 50px 300px 50px 300px;
+    padding:15px 50px 10px 50px;
+}
+input[type=text] {
+    width: 90%;
+}
+input {
+    margin-left: 30px;
+}
+button {
+    margin-left: 30px;
+    
+}
+.note {
+    background-image: url("assets/Pics/notebg.png");
+    padding: 25px 10px;
+    width: 15%;
+    background-repeat: no-repeat;
+    height: 300px;
+    margin: 20px;
+    animation: fadeIn ease 5s;
+}
+.note span {
+    float: right;
+    display: none;
+}
+
+.note:hover span {
+    display: inline;
+}
+
+@font-face {
+    font-family: 'titleFont';
+    src: url("assets/Fonts/Lobster-Regular.ttf");
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }}
+.note-text {
+        margin-top: 20px;
+        height: 150px;
+        width: 105%;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+.note-date {
+        font-weight: bolder;
+    }
+.note-hour {
+        font-style: italic;
+    }

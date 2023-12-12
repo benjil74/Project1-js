@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link href="style.css" rel="stylesheet">
+    <title>My Task Board</title>
+</head>
+<body onload="load()">
+    <h1>My Task Board</h1>
+    <form onsubmit="addMission(event)">
+
+<p>
+    <label class="h5">Mission:</label><br>
+    <input id="missionText" type="text" required>
+</p>
+<p>
+    <label class="h5">Date:</label><br>
+    <input id="missionDate" type="date" required>
+</p>
+<p>
+    <label class="h5">Hour:</label><br>
+    <input id="missionHour" type="time" required>
+</p>
+<span>
+    <button type="submit" class="btn btn-primary">Add Mission</button>
+</span>
+<span>
+    <button type="button" class="btn btn-secondary" onclick="clearAll()">Clear</button>
+</span>
+</form>
+<div class="flex-container" id="noteList">
+    <span onclick="closeNote(id)"></span>
+    
+</div>
+</table> 
+
+<script src="script.js"></script>
+</body>
+</html>
